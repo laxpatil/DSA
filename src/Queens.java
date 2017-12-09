@@ -4,7 +4,7 @@ public class Queens {
 
    
 
-   
+   /*
 
     public boolean canPlaceQueen(int r, int c) {
       
@@ -71,4 +71,6 @@ public class Queens {
         placeNqueens(x);
      
     }
+    
+    */
 }
