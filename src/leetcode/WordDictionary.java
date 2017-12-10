@@ -95,6 +95,7 @@ class WordDictionary {
 				}
 			}
 			return false;
+			
 		} else {
 			return false;
 		}
