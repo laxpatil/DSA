@@ -136,7 +136,7 @@ public class Twitter {
 	 * no-op.
 	 */
 	public void unfollow(int followerId, int followeeId) {
-		if (!userMap.containsKey(followerId) && followerId == followeeId) {
+		if (!userMap.containsKey(followerId) || (followerId == followeeId)) {
 			return;
 		}
 		userMap.get(followerId).unfollow(followeeId);
