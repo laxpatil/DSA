@@ -2,28 +2,28 @@ package leetcode;
 import java.util.LinkedList;
 
 
-public class trieNode{
+public class trieNode2{
         char data;
-        LinkedList<trieNode> childList;
+        LinkedList<trieNode2> childList;
         boolean end;
         
         
         
-        public trieNode(char c)
+        public trieNode2(char c)
         {
         	
         	
-        	childList=new LinkedList<trieNode>();
+        	childList=new LinkedList<trieNode2>();
         	end=false;
         	data=c;
         	
         }
         
-        public trieNode getsubNode(char c)
+        public trieNode2 getsubNode(char c)
         {
         	if (childList !=null)
         	{
-        		for (trieNode d: childList)
+        		for (trieNode2 d: childList)
         		{
         			if (d.data==c)
         			{

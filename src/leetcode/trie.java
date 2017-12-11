@@ -1,16 +1,16 @@
 package leetcode;
 
 public class trie {
-private trieNode root;
+private trieNode2 root;
 boolean flag=false;
 
 public trie()
 {
-    root = new trieNode(' '); 
+    root = new trieNode2(' '); 
 }
 public boolean search( String word)
 {
-	trieNode current=root;
+	trieNode2 current=root;
 	
 	for (char ch: word.toCharArray())
 	{
@@ -32,7 +32,7 @@ public boolean search( String word)
 
 public void insert(String word)
 {
-	trieNode current=root;
+	trieNode2 current=root;
 	
 	for(char ch: word.toCharArray())
 	{
@@ -45,7 +45,7 @@ public void insert(String word)
 				System.out.println(word); ///to find the prefix of the another word
 				return;
 			}
-			current.childList.add(new trieNode(ch));
+			current.childList.add(new trieNode2(ch));
 			current=current.getsubNode(ch);
 		}
 		else
